@@ -20,7 +20,7 @@ def write_to_socket(sock, terminate_signal):
 	except Exception as e:
 		print(e)
 
-def process(hand):
+def process(hand):	
 	# Replace (0.00,0.00,-0.00) with (0.00;0.00;-0.00)
 	hand = re.sub(r'\((-?\d+\.\d+), (-?\d+\.\d+), (-?\d+\.\d+)\)', r'(\1;\2;\3)', hand)
 	spl = hand.split(",")
