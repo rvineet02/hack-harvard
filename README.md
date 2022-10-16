@@ -1,8 +1,12 @@
 # ASL-to-text
 
-A program to allow deaf mute people to communicate with others using ASL in the metaverse. The hand recognizer is the newly created PointNet design to recognize shapes using clouds of 3 dimensional vectors.
+This project is a submission to HackHarvard 2022.
+
+[DEVPOST](https://devpost.com/software/metaspeak)
 
 # Models
+
+Models are trained manually using a live 3D point cloud of your hands using mediapipe. We campture multiple points per second to achieve a large enough dataset to train our chosen model structure, PointNet.
 
 ## abc model
 
@@ -20,8 +24,9 @@ Words used:
 -   bye
 -   how
 -   old
--   why
 -   you
 -   me
 -   explore
 -   deaf
+-   good
+-   bad
