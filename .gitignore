@@ -4,6 +4,10 @@ venv
 .pytest_cache
 .ipynb_checkpoints
 .env
-src/asl-engine/data/*
 obj/
 .vsconfig
+
+
+src/asl-engine/data/*
+src/metaspeak/Temp/
+src/metaspeak/Logs/
