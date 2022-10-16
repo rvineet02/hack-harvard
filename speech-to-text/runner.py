@@ -62,14 +62,17 @@ class AssemblyAI:
 			paras.append(p['text'])
 		return paras
 
+	def get_transcript(self, file, chunck_size=1024):
+		# get the upload url
+		upload_url = self.get_upload_url(self.read_file(file, chunck_size))
+		# send the file for transcription
+		id, status = self.send_for_transcription(upload_url)
+		# get the paragraphs
+		paras = self.get_paragraphs(id)
+		return paras[0]
+
 if __name__ == "__main__":
-	file = "./data/5000.mp3"
+	file = "./data/impressive.mp3"
 	ai = AssemblyAI()
-	data = ai.read_file(file)
-	upload_url = ai.get_upload_url(data)
-	id, status = ai.send_for_transcription(upload_url)
-	print(f"ID: {id}, Status: {status}")
-	check_status = ai.check_status(id)
-	print(f"Status: {check_status}")
-	paras = ai.get_paragraphs(id)
-	print(paras)
+	string = ai.get_transcript(file)
+	print(string)
