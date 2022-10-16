@@ -1,0 +1,40 @@
+Using template '/Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/AndroidPlayer/Apk/UnityManifest.xml'
+
+android.hardware.vulkan.version was added because:
+	One of the graphics devices was Vulkan
+supports-gl-texture elements added because:
+	TextureSupport was not set to generic
+android.permission.INTERNET was added because:
+	UnityEngine.Networking was present in:
+		Facebook.Wit.TTS-FeaturesChecked.txt
+		Unity.Services.Core.Internal-FeaturesChecked.txt
+		Unity.Services.Core.Networking-FeaturesChecked.txt
+		Unity.Services.Core.Telemetry-FeaturesChecked.txt
+	System.Net.Sockets was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		Oculus.VR-FeaturesChecked.txt
+	UnityEngine.Network was present in:
+		Facebook.Wit.TTS-FeaturesChecked.txt
+		Unity.Services.Core.Internal-FeaturesChecked.txt
+		Unity.Services.Core.Networking-FeaturesChecked.txt
+		Unity.Services.Core.Telemetry-FeaturesChecked.txt
+	UnityEngine.Networking.UnityWebRequest was present in:
+		Facebook.Wit.TTS-FeaturesChecked.txt
+		Unity.Services.Core.Internal-FeaturesChecked.txt
+		Unity.Services.Core.Networking-FeaturesChecked.txt
+		Unity.Services.Core.Telemetry-FeaturesChecked.txt
+	Force Internet Permission
+android.permission.ACCESS_NETWORK_STATE was added because:
+	UnityEngine.Application::get_internetReachability was present in:
+		Unity.Services.Core.Telemetry-FeaturesChecked.txt
+android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.BLUETOOTH, android.hardware.microphone were added because:
+	UnityEngine.Microphone was present in:
+		Oculus.LipSync-FeaturesChecked.txt
+		Facebook.WitAI-FeaturesChecked.txt
+android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
+	UnityEngine.Input::GetTouch was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		UnityEngine.UI-FeaturesChecked.txt
+	UnityEngine.Input::get_touchCount was present in:
+		Assembly-CSharp-FeaturesChecked.txt
+		UnityEngine.UI-FeaturesChecked.txt

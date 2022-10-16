@@ -1,0 +1,221 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:installLocation="auto"
+6    android:versionCode="1"
+7    android:versionName="0.1" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="23"
+10-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml
+11        android:targetSdkVersion="30" />
+11-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml
+12
+13    <uses-feature android:glEsVersion="0x00030000" />
+13-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:27:3-52
+13-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:27:17-49
+14    <uses-feature
+14-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:28:3-91
+15        android:name="android.hardware.vulkan.version"
+15-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:28:17-63
+16        android:required="false" />
+16-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:28:64-88
+17
+18    <supports-gl-texture android:name="GL_KHR_texture_compression_astc_ldr" />
+18-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:29:3-77
+18-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:29:24-74
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:30:3-65
+20-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:30:20-62
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:31:3-77
+21-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:31:20-74
+22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+22-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:32:3-69
+22-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:32:20-66
+23    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+23-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:33:3-78
+23-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:33:20-75
+24
+25    <uses-feature
+25-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:34:3-87
+26        android:name="android.hardware.microphone"
+26-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:34:17-59
+27        android:required="false" />
+27-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:34:60-84
+28    <uses-feature
+28-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:35:3-88
+29        android:name="android.hardware.touchscreen"
+29-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:35:17-60
+30        android:required="false" />
+30-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:35:61-85
+31    <uses-feature
+31-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:36:3-99
+32        android:name="android.hardware.touchscreen.multitouch"
+32-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:36:17-71
+33        android:required="false" />
+33-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:36:72-96
+34    <uses-feature
+34-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:37:3-108
+35        android:name="android.hardware.touchscreen.multitouch.distinct"
+35-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:37:17-80
+36        android:required="false" />
+36-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:37:81-105
+37    <uses-feature
+37-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:38:3-111
+38        android:name="android.hardware.vr.headtracking"
+38-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:38:17-64
+39        android:required="true"
+39-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:38:85-108
+40        android:version="1" />
+40-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:38:65-84
+41    <uses-feature
+41-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:39:3-87
+42        android:name="oculus.software.handtracking"
+42-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:39:17-60
+43        android:required="true" />
+43-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:39:61-84
+44
+45    <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+45-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:40:3-73
+45-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:40:20-70
+46
+47    <application
+47-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:3-26:17
+48        android:allowBackup="false"
+48-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:114-141
+49        android:extractNativeLibs="true"
+49-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:16-48
+50        android:icon="@mipmap/app_icon"
+50-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:82-113
+51        android:label="@string/app_name"
+51-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:49-81
+52        android:networkSecurityConfig="@xml/network_sec_config" >
+52-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:3:142-197
+53        <activity
+53-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:5-13:16
+54            android:name="com.unity3d.player.UnityPlayerActivity"
+54-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:15-68
+55            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
+55-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:204-305
+56            android:hardwareAccelerated="false"
+56-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:341-376
+57            android:launchMode="singleTask"
+57-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:172-203
+58            android:resizeableActivity="false"
+58-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:306-340
+59            android:screenOrientation="landscape"
+59-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:134-171
+60            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+60-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:69-133
+61            <intent-filter>
+61-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:5:7-9:23
+62                <action android:name="android.intent.action.MAIN" />
+62-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:6:9-61
+62-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:6:17-58
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:7:9-69
+64-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:7:19-66
+65                <category android:name="com.oculus.intent.category.VR" />
+65-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:8:9-66
+65-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:8:19-63
+66            </intent-filter>
+67
+68            <meta-data
+68-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:10:7-82
+69                android:name="unityplayer.UnityActivity"
+69-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:10:18-58
+70                android:value="true" />
+70-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:10:59-79
+71            <meta-data
+71-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:11:7-78
+72                android:name="android.notch_support"
+72-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:11:18-54
+73                android:value="true" />
+73-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:11:55-75
+74            <meta-data
+74-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:12:7-81
+75                android:name="com.oculus.vr.focusaware"
+75-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:12:18-57
+76                android:value="true" />
+76-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:12:58-78
+77        </activity>
+78
+79        <meta-data
+79-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:14:5-69
+80            android:name="unity.splash-mode"
+80-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:14:16-48
+81            android:value="0" />
+81-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:14:49-66
+82        <meta-data
+82-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:15:5-74
+83            android:name="unity.splash-enable"
+83-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:15:16-50
+84            android:value="True" />
+84-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:15:51-71
+85        <meta-data
+85-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:16:5-78
+86            android:name="unity.launch-fullscreen"
+86-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:16:16-54
+87            android:value="True" />
+87-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:16:55-75
+88        <meta-data
+88-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:17:5-84
+89            android:name="unity.allow-resizable-window"
+89-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:17:16-59
+90            android:value="False" />
+90-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:17:60-81
+91        <meta-data
+91-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:18:5-81
+92            android:name="notch.config"
+92-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:18:16-43
+93            android:value="portrait|landscape" />
+93-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:18:44-78
+94        <meta-data
+94-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:19:5-88
+95            android:name="com.oculus.handtracking.frequency"
+95-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:19:16-64
+96            android:value="HIGH" />
+96-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:19:65-85
+97        <meta-data
+97-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:20:5-86
+98            android:name="com.oculus.handtracking.version"
+98-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:20:16-62
+99            android:value="V2.0" />
+99-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:20:63-83
+100        <meta-data
+100-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:21:5-97
+101            android:name="com.samsung.android.vr.application.mode"
+101-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:21:16-70
+102            android:value="vr_only" />
+102-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:21:71-94
+103        <meta-data
+103-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:22:5-90
+104            android:name="com.unity.xr.oculus.LowOverheadMode"
+104-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:22:16-66
+105            android:value="true" />
+105-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:22:67-87
+106        <meta-data
+106-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:23:5-88
+107            android:name="com.unity.xr.oculus.LateLatching"
+107-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:23:16-63
+108            android:value="false" />
+108-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:23:64-85
+109        <meta-data
+109-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:24:5-93
+110            android:name="com.unity.xr.oculus.LateLatchingDebug"
+110-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:24:16-68
+111            android:value="false" />
+111-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:24:69-90
+112        <meta-data
+112-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:25:5-84
+113            android:name="com.oculus.supportedDevices"
+113-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:25:16-58
+114            android:value="quest2" />
+114-->/Users/sampomerantz/hackharvard1/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:25:59-81
+115    </application>
+116
+117</manifest>
