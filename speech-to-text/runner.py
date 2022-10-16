@@ -5,6 +5,9 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+import sounddevice as sd
+from scipy.io.wavfile import write
+
 class AssemblyAI:
 	def __init__(self):
 		self.key = os.environ.get("key")
@@ -44,10 +47,19 @@ class AssemblyAI:
 		res = response.json()
 		return res['status']
 
+	def __record_audio():
+	# record audio for 5 seconds
+		fs = 44100  # Sample rate
+		seconds = 5  # Duration of recording
+
+		myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=1)
+		sd.wait()  # Wait until recording is finished
+		write('./data/output.wav', fs, myrecording)  # Save as WAV file
+
 	def __get_paragraphs(self, id):
 		# make sure the status is completed
 		while True:
-			status = self.check_status(id)
+			status = self.__check_status(id)
 			if status == "completed":
 				print(f"Status: {status}")
 				break
@@ -56,7 +68,6 @@ class AssemblyAI:
 
 		response = requests.get(f"{self.endpoint}/transcript/{id}/paragraphs", headers=self.header)
 		res = response.json()
-		print(res)
 		paras = []
 		for p in res['paragraphs']:
 			paras.append(p['text'])
@@ -64,7 +75,7 @@ class AssemblyAI:
 
 	def get_transcript(self, file, chunck_size=1024):
 		# get the upload url
-		upload_url = self.__get_upload_url(self.read_file(file, chunck_size))
+		upload_url = self.__get_upload_url(self.__read_file(file, chunck_size))
 		# send the file for transcription
 		id, status = self.__send_for_transcription(upload_url)
 		# get the paragraphs
@@ -72,7 +83,7 @@ class AssemblyAI:
 		return paras[0]
 
 if __name__ == "__main__":
-	file = "./data/impressive.mp3"
+	file = "./data/output.wav"
 	ai = AssemblyAI()
 	string = ai.get_transcript(file)
 	print(string)
