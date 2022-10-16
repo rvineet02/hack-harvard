@@ -88,17 +88,6 @@ class Classifier:
 
         return self.WEBCAM.process_next()
 
-    def display_results(self, text: str, frame):
-        """
-        Displays the results of the classifier
-            
-        Args:
-            sentences (list): The sentences obtained till now
-        """
-        # Get text to display
-        text = f"Live sentence: {text}" if text else "Live sentence: None"
-        self.WEBCAM.display_text(text, frame)
-
     def log(self, msg: str):
         print(f"[Classifier] {msg}")
 
@@ -135,18 +124,10 @@ class Classifier:
 
                 # If curr_nones is greater than NOISE_LEVEL, then we have a sentence
                 if curr_nones > self.NOISE_LEVEL:
-                    created_sentence = create_sentence(
-                        curr_sentence,
-                        self.NOISE_LEVEL
-                    )
-                    curr_sentence = []
-
-                    if created_sentence:
-                        sentences.append(created_sentence)
+                    pred_text = "None"
 
             # Display
-            text = sentences[-1] if sentences else None
-            self.display_results(pred_text, frame)
+            self.WEBCAM.display_text(pred_text, frame)
 
             # Convert to BGR for display
             frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
