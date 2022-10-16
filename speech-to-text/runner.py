@@ -47,7 +47,7 @@ class AssemblyAI:
 		res = response.json()
 		return res['status']
 
-	def __record_audio():
+	def __record_audio(self):
 	# record audio for 5 seconds
 		fs = 44100  # Sample rate
 		seconds = 5  # Duration of recording
